@@ -1,0 +1,1848 @@
+# =============================================================================
+# UNIFIED TRAINING PLAN - Hyrox Race Prep
+# =============================================================================
+# Race: April 13, 2026 | Goal: Sub 70 minutes
+# Duration: 10 weeks (Feb 2 - Apr 13)
+# Periodization: 3 on + 1 deload, repeated, then taper
+# =============================================================================
+
+meta:
+  raceDate: April 13, 2026
+  goalTime: "Sub 70 minutes"
+  totalWeeks: 10
+  startDate: February 2, 2026
+  startingRunVolume: "45 km/week"
+  equipment:
+    available: [SkiErg, Sled, Rower, Wall Ball, Kettlebells, Dumbbells, Barbell]
+    substitutions:
+      sandbag: "Barbell front rack or zercher lunges"
+
+# =============================================================================
+# PACE ZONES
+# =============================================================================
+paces:
+  E:
+    name: Easy
+    pace: "9:00-7:00/km (HR based)"
+    purpose: Aerobic base, recovery
+  M:
+    name: Marathon
+    pace: "5:55/km"
+    purpose: Race simulation
+  T:
+    name: Threshold
+    pace: "5:16/km"
+    purpose: Lactate clearance
+  I:
+    name: Interval
+    pace: "4:50/km"
+    purpose: VO2max development
+  R:
+    name: Repetition
+    pace: "4:30/km"
+    purpose: Speed & running economy
+
+# =============================================================================
+# PERIODIZATION OVERVIEW
+# =============================================================================
+periodization:
+  - name: "Cycle 1 - Base/Build"
+    weeks: "1-3"
+    runVolume: "45-52 km"
+    hyrox: "Mini sims, station learning at race weight"
+  - name: "Deload 1 + Full Sim"
+    weeks: "4"
+    runVolume: "~30 km"
+    hyrox: "FULL 8-station simulation"
+  - name: "Cycle 2 - Build/Peak"
+    weeks: "5-7"
+    runVolume: "50-54 km"
+    hyrox: "Mini sims at overload weight, full sim Week 7"
+  - name: "Deload 2"
+    weeks: "8"
+    runVolume: "~35 km"
+    hyrox: "Easy flow only"
+  - name: "Taper + Race"
+    weeks: "9-10"
+    runVolume: "42 km → ~14 km"
+    hyrox: "Abbreviated sim → activation only"
+
+# =============================================================================
+# CYCLE PHILOSOPHY
+# =============================================================================
+cyclePhilosophy:
+  cycle1:
+    name: "Base/Build (Weeks 1-3)"
+    philosophy: |
+      Focus on technique and movement quality over intensity. Get comfortable
+      with each station individually. Build aerobic base for station work.
+      Learn your natural pacing and identify weaknesses.
+
+      Hyrox success comes from efficient transitions and sustainable pacing across
+      8 running segments and 8 functional stations. Running accounts for ~50% of
+      race time. This phase builds the other 50%.
+
+      Key principles:
+      - Train movements before adding intensity
+      - Practice "compromised running" - running under fatigue after stations
+      - Establish baseline times for each station
+      - Mini sims rotate through push-dominant and pull/carry-dominant stations
+
+  deload1:
+    name: "Deload 1 + Full Sim (Week 4)"
+    philosophy: |
+      Reduced running volume allows your body to absorb 3 weeks of training stress.
+      The full 8-station simulation is your first complete dress rehearsal.
+      Treat it like race day - record all splits. This benchmark informs Cycle 2 focus.
+
+      Strength deload: reduce weight 15-20%, drop 1-2 sets per exercise.
+
+  cycle2:
+    name: "Build/Peak (Weeks 5-7)"
+    philosophy: |
+      Progress to race-weight and overload work. Train heavier than race weight
+      so competition feels manageable. Start combining stations to simulate
+      race conditions. Build toward full race simulation in Week 7.
+
+      Key principles:
+      - Race weight on all stations from Week 5
+      - Overload weight (10-15% above race) in Week 6
+      - Full 1km run segments in Week 7 simulation
+      - Address weakest stations identified in Week 4 sim
+      - Master transitions - seconds lost add up across 16 transitions
+      - Build mental resilience to push through accumulated fatigue
+
+  deload2:
+    name: "Deload 2 (Week 8)"
+    philosophy: |
+      Adaptation week after 7 weeks of progressive training stress.
+      No hard hyrox work. Reduced running and strength volume.
+      Movement maintenance only. Come back fresh for the taper.
+
+  taper:
+    name: "Taper + Race (Weeks 9-10)"
+    philosophy: |
+      Volume drops but intensity stays. Stay sharp without accumulating fatigue.
+      Your fitness is built - now preserve it.
+
+      Week 9: Abbreviated simulation maintains confidence and sharpness.
+      Week 10: Minimal activation. Trust the training.
+
+      Race day strategy: Control the first half. Attack the second half.
+      Running: 8 x 1km @ 5:00-5:15 = 40-42 min
+      Stations: Target 28-30 min total
+      Transitions: Budget 2-3 min total (15-20s each)
+
+# =============================================================================
+# STRENGTH PROGRAM (Constant across all weeks)
+# =============================================================================
+# Deload weeks: reduce working weight by 15-20%, drop 1-2 sets per exercise
+# Taper weeks: maintain weight, reduce total volume by 40%
+
+strength:
+  monday:
+    name: "Squat Day (Lower + Core)"
+    intent: "Heavy squat stimulus, quad focus, no hinge overlap"
+    exercises:
+      - name: Back Squat
+        sets: "4-5 x 3-6"
+        notes: "Top set @ RPE 8, back-offs cleaner"
+      - name: Paused Squat
+        sets: "2-3 x 5-6"
+        notes: "Lighter - technique + quad time under tension"
+      - name: Front-Foot Elevated Split Squat
+        sets: "3 x 8-12/leg"
+      - name: Standing Calf Raises
+        sets: "4 x 12-15"
+      - name: "Core: Ab Wheel / Hanging Knee Raise"
+        sets: "3-4 sets"
+
+  tuesday:
+    name: "Back + Biceps (Arm Priority)"
+    exercises:
+      - name: Weighted Chin-Ups
+        sets: "4 x 5-8"
+      - name: Chest-Supported DB Row
+        sets: "4 x 8-12"
+      - name: Barbell Row
+        sets: "2-3 x 6-10"
+      - name: Rear Delt DB Fly
+        sets: "4 x 15-20"
+      - name: Preacher Curl (BB/EZ)
+        sets: "4 x 8-12"
+      - name: Incline DB Curl
+        sets: "3 x 10-15"
+      - name: Hammer Curl
+        sets: "2 x 12-15"
+
+  wednesday:
+    name: "Deadlift + Posterior Chain"
+    intent: "Deadlift strength + hamstrings, controlled fatigue"
+    exercises:
+      - name: "Deadlift (Conventional or Sumo)"
+        sets: "4 x 3-5"
+        notes: "RPE 7-8, never grinders"
+      - name: "Tempo or Paused Deadlift"
+        sets: "2 x 5"
+        notes: "Optional - skip if recovery feels off"
+      - name: Barbell Hip Thrust
+        sets: "3 x 8-12"
+      - name: "Sliding Hamstring Curl / Nordic"
+        sets: "3 x 6-10"
+      - name: "Farmer's Carry (heavy)"
+        sets: "4 x 40-60 sec"
+
+  thursday:
+    name: "Chest + Delts + Triceps"
+    exercises:
+      - name: Bench Press
+        sets: "4 x 4-6"
+      - name: Incline DB Bench
+        sets: "3 x 8-12"
+      - name: Standing OHP
+        sets: "3 x 5-8"
+      - name: Lean-Away Lateral Raise
+        sets: "5 x 12-20"
+      - name: "Lateral Raise (partials last set)"
+        sets: "2 x 20-30"
+      - name: "Rear Delt Row (wide grip)"
+        sets: "3 x 12-15"
+      - name: Weighted Dips
+        sets: "3 x 6-10"
+      - name: Overhead DB Triceps Extension
+        sets: "3 x 12-15"
+
+  saturday:
+    name: "Arms + Delts (Pump & Shape)"
+    intent: "Visual pop, minimal CNS cost"
+    exercises:
+      - name: Seated DB Shoulder Press
+        sets: "3 x 8-12"
+      - name: "Lateral Raise Giant Set (Lateral → Front → Lean)"
+        sets: "3 rounds x 15-20"
+      - name: EZ-Bar Curl
+        sets: "4 x 8-12"
+      - name: DB Bayesian Curl
+        sets: "3 x 12-15"
+      - name: Skullcrushers
+        sets: "4 x 8-12"
+      - name: "Bench Dips (slow)"
+        sets: "3 x AMRAP"
+      - name: Light Farmer's Carry
+        sets: "2 x 90 sec"
+
+  recoveryGuardrails:
+    - "Squats heavy Monday → Deadlifts heavy Wednesday = OK"
+    - "Never push both to RPE 9+ in the same week"
+    - "If arms/delts feel flat → reduce DL volume before touching upper work"
+    - "Deload weeks: reduce weight 15-20%, drop 1-2 sets"
+    - "Taper weeks 9-10: maintain weight, cut total volume 40%"
+
+# =============================================================================
+# WEEKLY PLANS
+# =============================================================================
+
+weeks:
+
+  # ===========================================================================
+  # WEEK 1 - Base (Feb 2-8) | Run: 45 km
+  # ===========================================================================
+  - week: 1
+    dates: "Feb 2-8"
+    phase: Base
+    runVolume: "45 km"
+    philosophy: "Establish rhythm at 45K. Learn hyrox stations with compromised running. All runs at prescribed paces - don't chase speed yet."
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "7 km"
+            details: "Steady E pace (HR based (9:00-7:00/km)) throughout"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core)"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "9 km"
+            details: "2km E + 2x12min T @ 5:16/km (3min jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Mini Sim A - Push Dominant"
+            duration: "50 min"
+            warmup: "5 min easy row + dynamic stretches"
+            workout:
+              - block: "Mini Simulation (4 stations)"
+                exercises:
+                  - name: "Station Circuit x 2 rounds"
+                    prescription: |
+                      Round 1:
+                        Run 600m @ 5:30/km
+                        SkiErg 500m (target 2:20/500m split)
+                        Run 600m @ 5:30/km
+                        Wall Balls 25 reps
+                      Round 2:
+                        Run 600m @ 5:30/km
+                        Row 500m (target 2:15/500m split)
+                        Run 600m @ 5:30/km
+                        Sled Push 25m @ 130 kg (sub race weight)
+                    rest: "2 min between rounds"
+                    notes: "First mini sim. Focus on transitions and consistent pacing."
+              - block: "Grip & Carry"
+                exercises:
+                  - name: Farmers Carry
+                    prescription: "3 x 100m @ 22 kg each hand"
+                    rest: "60s"
+            cooldown: "5 min stretch: hips, shoulders, lats"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "10 km"
+            details: "2km E + 6x800m I @ 4:50/km (2min jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Machine Zone 2"
+            duration: "40-50 min"
+            workout:
+              - block: "Aerobic Station Work"
+                exercises:
+                  - name: "Zone 2 Machine Rotation"
+                    prescription: |
+                      SkiErg: 10 min @ easy/moderate pace
+                      Row: 10 min @ 2:20-2:25/500m
+                      Easy run: 10 min @ E pace
+                    notes: "Keep HR in zone 2. Build aerobic capacity for stations."
+              - block: "Light Station Practice"
+                exercises:
+                  - name: "Technique Work"
+                    prescription: |
+                      Wall Balls: 2 x 15 (perfect form)
+                      Burpee Broad Jumps: 2 x 10m (technique only)
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core"
+          - time: "8:00-9:00"
+            type: run
+            session: "Easy / Optional"
+            distance: "0-5 km"
+            details: "Only if legs feel fresh. Skip if fatigued."
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "19 km"
+            details: "E pace, conversational. Last 3km slight negative split."
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Light Station Practice"
+            duration: "15-20 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Wall Balls: 2 x 15 reps easy
+                      Light farmers walk: 50m @ 16 kg
+                    notes: "Keep it brief. Movement maintenance only."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape)"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 2 - Build (Feb 9-15) | Run: 48 km
+  # ===========================================================================
+  - week: 2
+    dates: "Feb 9-15"
+    phase: Build
+    runVolume: "48 km"
+    philosophy: "Volume bump. Introduce race-weight sled work. Mini sim B hits pull/carry stations."
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "7 km"
+            details: "Steady E pace (HR based)"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core)"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "10 km"
+            details: "2km E + 15min T + 3min jog + 12min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Mini Sim B - Pull/Carry Dominant"
+            duration: "55 min"
+            warmup: "5 min bike + leg swings"
+            workout:
+              - block: "Sled Work at Race Weight"
+                exercises:
+                  - name: Sled Push
+                    prescription: "3 x 50m @ 152 kg (RACE WEIGHT)"
+                    rest: "2 min"
+                    notes: "First time full race weight, full distance. DON'T STOP."
+                  - name: Sled Pull
+                    prescription: "3 x 50m @ 103 kg (RACE WEIGHT)"
+                    rest: "2 min"
+              - block: "Mini Sim - Pull/Carry Focus"
+                exercises:
+                  - name: "Station Circuit x 2 rounds"
+                    prescription: |
+                      Round 1:
+                        Run 600m @ 5:30/km
+                        Sled Pull 50m @ 103 kg
+                        Run 600m @ 5:30/km
+                        Farmers Carry 200m @ 24 kg (race weight)
+                      Round 2:
+                        Run 600m @ 5:30/km
+                        Burpee Broad Jumps 40m
+                        Run 600m @ 5:30/km
+                        Barbell Lunges 50m @ 30 kg
+                    rest: "90s between rounds"
+                    notes: "Grip-heavy day. Notice fatigue transfer from pull → carry."
+            cooldown: "5 min walk, forearm stretch"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "11 km"
+            details: "2km E + 5x1000m I @ 4:50/km (2min jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Hyrox Lite - Compromised Running"
+            duration: "40 min"
+            workout:
+              - block: "Compromised Running Practice"
+                exercises:
+                  - name: "Station → Run x 4"
+                    prescription: |
+                      SkiErg 300m → Run 400m @ 5:30/km
+                      Row 300m → Run 400m @ 5:30/km
+                      Wall Balls 15 reps → Run 400m @ 5:30/km
+                      Burpee Broad Jumps 20m → Run 400m @ 5:30/km
+                    rest: "90s between"
+                    notes: "Practice running on fatigued legs. Maintain form."
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core"
+          - time: "8:00-9:00"
+            type: run
+            session: "Easy / Optional"
+            distance: "0-5 km"
+            details: "Only if fresh"
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "20 km"
+            details: "E pace with 2x5min at M pace (5:55/km) in middle"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Light Sled Work"
+            duration: "15-20 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Sled Pull: 2 x 25m @ 70 kg (light)
+                      Easy row: 500m @ 2:25 pace
+                    notes: "Keep it brief. Light movement only."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape)"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 3 - Build (Feb 16-22) | Run: 52 km
+  # ===========================================================================
+  - week: 3
+    dates: "Feb 16-22"
+    phase: Build
+    runVolume: "52 km"
+    philosophy: "Peak volume for cycle 1. Mini sim C covers 5-6 stations as dress rehearsal for next week's full sim."
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "8 km"
+            details: "Steady E pace (HR based)"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core)"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "11 km"
+            details: "2km E + 20min T + 3min jog + 15min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Mini Sim C - 6-Station Dress Rehearsal"
+            duration: "60 min"
+            warmup: "5 min row + dynamic stretches"
+            workout:
+              - block: "6-Station Simulation"
+                notes: "Dress rehearsal for next week's full sim. Continuous effort."
+                exercises:
+                  - name: "6-Station Flow"
+                    prescription: |
+                      Run 600m @ 5:15/km
+                      SkiErg 1000m (target sub 5:00)
+                      Run 600m @ 5:15/km
+                      Sled Push 50m @ 145 kg
+                      Run 600m @ 5:15/km
+                      Row 1000m (target sub 4:30)
+                      Run 600m @ 5:15/km
+                      Burpee Broad Jumps 60m
+                      Run 600m @ 5:15/km
+                      Farmers Carry 200m @ 24 kg
+                      Run 600m @ 5:15/km
+                      Wall Balls 75 reps
+                    rest: "None - continuous"
+                    notes: |
+                      TIME EVERYTHING. This is your pre-sim benchmark.
+                      6 of 8 stations at near-race specs.
+            cooldown: "Extended stretch + foam roll"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "12 km"
+            details: "2km E + 6x1000m I @ 4:50/km (90s jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Machine Zone 2"
+            duration: "45 min"
+            workout:
+              - block: "Aerobic Station Work"
+                exercises:
+                  - name: "Zone 2 Rotation"
+                    prescription: |
+                      SkiErg: 12 min @ moderate
+                      Row: 12 min @ 2:20/500m
+                      Easy run: 10 min @ E pace
+              - block: "Light Practice"
+                exercises:
+                  - name: "Technique"
+                    prescription: |
+                      Sled Pull: 2 x 25m @ 80 kg (light, technique)
+                      Wall Balls: 2 x 20
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core"
+          - time: "8:00-9:00"
+            type: run
+            session: "Easy / Optional"
+            distance: "0-5 km"
+            details: "Optional. Consider skipping to save legs for full sim next week."
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "21 km"
+            details: "E pace, negative split last 5km"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Burpee & Carry Practice"
+            duration: "15-20 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Burpee Broad Jumps: 2 x 10m (technique only)
+                      Farmers Carry: 50m @ 20 kg
+                    notes: "Keep it brief. Technique focus only."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape)"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 4 - Deload + FULL SIM (Feb 23 - Mar 1) | Run: 30 km
+  # ===========================================================================
+  - week: 4
+    dates: "Feb 23 - Mar 1"
+    phase: "Deload + Full Simulation"
+    runVolume: "30 km"
+    philosophy: |
+      Reduced running lets legs recover. Wednesday is FULL 8-station simulation -
+      your first complete dress rehearsal. Treat it like race day. Record all splits.
+      Strength: reduce weight 15-20%, drop 1-2 sets per exercise.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "5 km"
+            details: "Very easy, recovery focus"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - DELOAD"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans (light)"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories DELOAD"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms DELOAD"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "7 km"
+            details: "2km E + 12min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders DELOAD"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "FULL 8-STATION SIMULATION #1"
+            duration: "80-95 min"
+            warmup: "15 min progressive: easy row → dynamic stretches → practice transitions"
+            workout:
+              - block: "FULL HYROX SIMULATION"
+                notes: |
+                  YOUR FIRST FULL DRESS REHEARSAL.
+                  All 8 stations at race weight with 800m runs between.
+                  TIME EVERYTHING. This is your benchmark.
+                  Control first half, push second half.
+                exercises:
+                  - name: "Full 8-Station Simulation"
+                    prescription: |
+                      Station 1: Run 800m → SkiErg 1000m
+                      Station 2: Run 800m → Sled Push 50m @ 152 kg
+                      Station 3: Run 800m → Sled Pull 50m @ 103 kg
+                      Station 4: Run 800m → Burpee Broad Jumps 80m
+                      Station 5: Run 800m → Row 1000m
+                      Station 6: Run 800m → Farmers Carry 200m @ 24 kg
+                      Station 7: Run 800m → Barbell Lunges 100m @ 35 kg
+                      Station 8: Run 800m → Wall Balls 100 reps
+                    rest: "None - continuous like race day"
+                    notes: |
+                      RECORD EVERY SPLIT.
+                      Add ~5-8 min for extra 200m/segment to estimate race time.
+                      Identify your weakest stations for cycle 2 focus.
+            cooldown: "Extended recovery: walk, stretch, refuel immediately"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift - LIGHT"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories DELOAD"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds DELOAD"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "6 km"
+            details: "2km E + 4x600m I (2min jog) + 1km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation DELOAD"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Recovery - Light Movement Only"
+            duration: "25 min"
+            workout:
+              - block: "Easy Movement"
+                exercises:
+                  - name: "Recovery Flow"
+                    prescription: |
+                      Easy row: 1000m @ 2:30 pace
+                      Easy run: 5 min @ very easy
+                      Wall Balls: 2 x 10 (easy)
+                    notes: "Movement maintenance only. Stay fresh."
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core (light)"
+          - time: "8:00-9:00"
+            type: rest
+            session: "Skip - deload week"
+
+      saturday:
+        slots:
+          - time: "5:00-6:30"
+            type: run
+            session: Long Run
+            distance: "12 km"
+            details: "E pace, relaxed. Recovery run."
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Skip or Very Light"
+            duration: "15 min"
+            notes: "OPTIONAL - Recovery week. Recommend skipping."
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Easy row: 500m
+                      Wall Balls: 15 reps
+                    notes: "Only if you feel antsy. Resting is better. Recovery week."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape) - DELOAD"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 5 - Build (Mar 2-8) | Run: 50 km
+  # ===========================================================================
+  - week: 5
+    dates: "Mar 2-8"
+    phase: Build
+    runVolume: "50 km"
+    philosophy: |
+      Start cycle 2 informed by full sim results. Address weakest stations from Week 4.
+      Mini sim A at race weight. Running volume builds back up.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "8 km"
+            details: "Steady E pace (HR based)"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core)"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "11 km"
+            details: "2km E + 2x15min T @ 5:16/km (3min jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Mini Sim A - Race Weight, Push Focus"
+            duration: "55 min"
+            warmup: "5 min row + dynamic"
+            workout:
+              - block: "Sled → Run Transitions"
+                notes: "Hardest transition in Hyrox - practice it"
+                exercises:
+                  - name: "Sled + Run Combo x 3"
+                    prescription: |
+                      Sled Push 50m @ 152 kg → Run 800m @ 5:15/km
+                    rest: "90s between rounds"
+                    notes: "Legs will feel like concrete. Push through."
+              - block: "Mini Sim - Push Dominant"
+                exercises:
+                  - name: "4-Station Circuit"
+                    prescription: |
+                      Run 800m @ 5:15/km
+                      SkiErg 750m @ race pace
+                      Run 800m @ 5:15/km
+                      Row 750m @ race pace
+                      Run 800m @ 5:15/km
+                      Wall Balls 50 reps (sets of 10)
+                      Run 800m @ 5:15/km
+                      Sled Push 50m @ 152 kg
+                    rest: "None - continuous"
+                    notes: "All at race weight. Compare paces to Week 1 sim."
+            cooldown: "Stretch, refuel"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "11 km"
+            details: "2km E + 7x1000m I @ 4:50/km (90s jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Compromised Running"
+            duration: "40 min"
+            workout:
+              - block: "Compromised Running Intervals"
+                exercises:
+                  - name: "Station → Run x 5"
+                    prescription: |
+                      Row 500m → Run 600m @ 5:15/km
+                      Wall Balls 20 → Run 600m @ 5:15/km
+                      SkiErg 500m → Run 600m @ 5:15/km
+                      Burpee Broad Jumps 20m → Run 600m @ 5:15/km
+                      Sled Pull 25m @ 103 kg → Run 600m @ 5:15/km
+                    rest: "60s between"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core"
+          - time: "8:00-9:00"
+            type: run
+            session: "Easy / Optional"
+            distance: "0-5 km"
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "20 km"
+            details: "E pace with 3x5min at M pace (5:55/km) scattered throughout"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: SkiErg Practice"
+            duration: "15-20 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      SkiErg: 2 x 500m @ easy pace
+                      Row: 500m @ 2:20 pace
+                    notes: "Keep it brief. Easy effort only."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape)"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 6 - Build (Mar 9-15) | Run: 54 km
+  # ===========================================================================
+  - week: 6
+    dates: "Mar 9-15"
+    phase: Build
+    runVolume: "54 km"
+    philosophy: |
+      Highest volume week in cycle 2. Overload weight on sleds and carries.
+      Train heavier than race so competition feels manageable.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "9 km"
+            details: "Steady E pace (HR based)"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core)"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "12 km"
+            details: "2km E + 25min T + 3min jog + 12min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Mini Sim B - Overload Weight, Pull/Carry"
+            duration: "65 min"
+            warmup: "5 min bike + dynamic"
+            workout:
+              - block: "Sled Overload"
+                notes: "Train heavier so race weight feels easy"
+                exercises:
+                  - name: Sled Push
+                    prescription: "3 x 50m @ 170 kg (+18 kg over race)"
+                    rest: "2 min"
+                    notes: "After this, 152 kg will feel manageable."
+                  - name: Sled Pull
+                    prescription: "3 x 50m @ 115 kg (+12 kg over race)"
+                    rest: "2 min"
+              - block: "Mini Sim - Carry/Lunge Focus"
+                exercises:
+                  - name: "Station Circuit"
+                    prescription: |
+                      Run 800m @ 5:15/km
+                      Farmers Carry 200m @ 28 kg (+4 kg over race)
+                      Run 800m @ 5:15/km
+                      Barbell Lunges 100m @ 40 kg (overload)
+                      Run 800m @ 5:15/km
+                      Burpee Broad Jumps 80m (FULL DISTANCE)
+                    rest: "None - continuous"
+                    notes: |
+                      Full race distance on burpees. Overload on carries/lunges.
+                      This is the hardest mini sim. Embrace the suffering.
+            cooldown: "Extensive stretch + foam roll"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "12 km"
+            details: "2km E + 8x1000m I @ 4:50/km (90s jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Machine Zone 2 + Technique"
+            duration: "45 min"
+            workout:
+              - block: "Aerobic Station Work"
+                exercises:
+                  - name: "Zone 2 Rotation"
+                    prescription: |
+                      SkiErg: 12 min @ moderate
+                      Row: 12 min @ 2:20/500m
+                      Easy run: 10 min @ E pace
+              - block: "Technique Refinement"
+                exercises:
+                  - name: "Weak Station Practice"
+                    prescription: "15 min on your weakest 1-2 stations from Week 4 sim"
+                    notes: "Use full sim data to decide what needs work."
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core"
+          - time: "8:00-9:00"
+            type: run
+            session: "Easy / Optional"
+            distance: "0-5 km"
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "21 km"
+            details: "E pace, last 5km at M pace (5:55/km)"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Endurance Station Practice"
+            duration: "20 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      SkiErg: 750m @ comfortable pace
+                      Row: 750m @ 2:20 pace
+                    notes: "Keep it brief. Easy aerobic effort."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape)"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 7 - Peak + FULL SIM (Mar 16-22) | Run: 54 km
+  # ===========================================================================
+  - week: 7
+    dates: "Mar 16-22"
+    phase: "Peak + Full Simulation"
+    runVolume: "54 km"
+    philosophy: |
+      Peak week. Full 8-station simulation #2 on Wednesday. Compare to Week 4 sim.
+      This is your best predictor of race performance. Running stays high.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "8 km"
+            details: "Steady E pace"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core)"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Squat cleans"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "12 km"
+            details: "2km E + 30min T + 3min jog + 10min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "FULL 8-STATION SIMULATION #2"
+            duration: "80-95 min"
+            warmup: "15 min progressive: easy row → dynamic → practice transitions"
+            workout:
+              - block: "FULL HYROX SIMULATION"
+                notes: |
+                  FINAL FULL DRESS REHEARSAL.
+                  Compare every split to Week 4. You should be faster.
+                  Practice your race pacing strategy:
+                  "Control first half. Attack second half."
+                exercises:
+                  - name: "Full 8-Station Simulation"
+                    prescription: |
+                      Station 1: Run 1km → SkiErg 1000m
+                      Station 2: Run 1km → Sled Push 50m @ 152 kg
+                      Station 3: Run 1km → Sled Pull 50m @ 103 kg
+                      Station 4: Run 1km → Burpee Broad Jumps 80m
+                      Station 5: Run 1km → Row 1000m
+                      Station 6: Run 1km → Farmers Carry 200m @ 24 kg
+                      Station 7: Run 1km → Barbell Lunges 100m @ 35 kg
+                      Station 8: Run 1km → Wall Balls 100 reps
+                    rest: "None - continuous like race day"
+                    notes: |
+                      FULL 1km runs this time (closer to race specs).
+                      RECORD EVERY SPLIT. Compare to Week 4.
+                      This IS your race time predictor.
+            cooldown: "Extended recovery: walk, stretch, refuel"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "12 km"
+            details: "2km E + 5x1600m I @ 4:50/km (2min jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Compromised Running"
+            duration: "40 min"
+            workout:
+              - block: "Race-Pace Compromised Running"
+                exercises:
+                  - name: "Station → Run x 4"
+                    prescription: |
+                      Sled Push 25m @ 152 kg → Run 1km @ 5:15/km
+                      Row 500m → Run 1km @ 5:15/km
+                      Wall Balls 25 → Run 1km @ 5:15/km
+                      Burpee Broad Jumps 40m → Run 1km @ 5:15/km
+                    rest: "60s between"
+                    notes: "Race pace on the runs. This is sharpening."
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core"
+          - time: "8:00-9:00"
+            type: run
+            session: "Easy / Optional"
+            distance: "0-5 km"
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "22 km"
+            details: "E pace with 4x5min at M pace efforts"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Grip & Carry Practice"
+            duration: "15-20 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Farmers Carry: 100m @ 24 kg (race weight)
+                      Sled Pull: 25m @ 80 kg (light)
+                    notes: "Keep it brief. Light grip work only."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape)"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 8 - Deload (Mar 23-29) | Run: 35 km
+  # ===========================================================================
+  - week: 8
+    dates: "Mar 23-29"
+    phase: Deload
+    runVolume: "35 km"
+    philosophy: |
+      Adaptation week. Your body absorbs 7 weeks of training stress.
+      Reduced everything. No hard hyrox work. Strength deload.
+      Come back fresh for the taper.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "6 km"
+            details: "Very easy, recovery focus"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - DELOAD"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / light"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories DELOAD"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms DELOAD"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "8 km"
+            details: "2km E + 15min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders DELOAD"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Recovery - Easy Flow"
+            duration: "30 min"
+            workout:
+              - block: "Easy Movement Flow"
+                notes: "NO intensity. Recovery week."
+                exercises:
+                  - name: "Easy Flow"
+                    prescription: |
+                      Row: 1000m @ 2:25 pace
+                      Easy run: 800m @ 6:30/km
+                      SkiErg: 500m easy
+                      Wall Balls: 2 x 15 easy
+                      Farmers Carry: 100m @ 18 kg
+                    rest: "Full recovery between"
+                    notes: "Movement maintenance. Stay fresh."
+            cooldown: "10 min mobility: hips, thoracic, shoulders"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift - light"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories DELOAD"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds DELOAD"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "7 km"
+            details: "2km E + 5x800m I (2min jog) + 1km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation DELOAD"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Recovery - Light Movement"
+            duration: "20 min"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Easy Work"
+                    prescription: |
+                      Easy row: 500m
+                      Light stretch
+                    notes: "Only if you feel antsy. Resting is better."
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core (light)"
+          - time: "8:00-9:00"
+            type: rest
+            session: "Skip - deload"
+
+      saturday:
+        slots:
+          - time: "5:00-6:30"
+            type: run
+            session: Long Run
+            distance: "14 km"
+            details: "E pace, relaxed"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Skip or Very Light"
+            duration: "15 min"
+            notes: "OPTIONAL - Deload week. Recommend skipping."
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Easy row: 500m
+                      Light stretching
+                    notes: "Only if you feel antsy. Resting is better. Recommend skipping."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape) - DELOAD"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 9 - Taper (Mar 30 - Apr 5) | Run: 42 km
+  # ===========================================================================
+  - week: 9
+    dates: "Mar 30 - Apr 5"
+    phase: Taper
+    runVolume: "42 km"
+    philosophy: |
+      Volume drops but intensity stays. Stay sharp without accumulating fatigue.
+      Abbreviated hyrox sim to maintain confidence. Strength: maintain weight, cut volume 40%.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run
+            distance: "7 km"
+            details: "Steady E pace, stay fresh"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - TAPER"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / light"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - Accessories TAPER"
+            ref: strength.monday
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms TAPER"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: run
+            session: Tempo Run
+            distance: "10 km"
+            details: "2km E + 20min T + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Pull & Shoulders TAPER"
+            ref: strength.tuesday
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Abbreviated Sim - 4 Stations, Race Intensity"
+            duration: "45 min"
+            warmup: "5 min easy"
+            workout:
+              - block: "Abbreviated Simulation"
+                notes: "Reduced volume, RACE INTENSITY. Stay sharp."
+                exercises:
+                  - name: "4-Station Sharp Simulation"
+                    prescription: |
+                      Run 800m @ race pace (5:15/km)
+                      SkiErg 750m @ race pace
+                      Run 800m @ race pace
+                      Sled Push 50m @ 152 kg (race weight)
+                      Run 800m @ race pace
+                      Wall Balls 50 reps
+                      Run 800m @ race pace
+                    rest: "None - continuous"
+                    notes: |
+                      Shorter than race but at full intensity.
+                      Trust your fitness. This is confidence work.
+            cooldown: "Light stretch + visualization"
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Deadlift - light"
+          - time: "8:00-9:00"
+            type: strength
+            session: "Deadlift + Posterior Chain - Accessories TAPER"
+            ref: strength.wednesday
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Compounds TAPER"
+            ref: strength.thursday
+          - time: "6:00-7:00"
+            type: run
+            session: Interval Run
+            distance: "9 km"
+            details: "2km E + 8x600m I (90s jog) + 2km E"
+          - time: "7:00-8:00"
+            type: strength
+            session: "Chest + Delts + Triceps - Isolation TAPER"
+            ref: strength.thursday
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Light Sharpening"
+            duration: "20 min"
+            workout:
+              - block: "Movement Activation"
+                exercises:
+                  - name: "Light Station Work"
+                    prescription: |
+                      Wall Balls: 15 reps
+                      Easy row: 500m
+                      3 burpee broad jumps (feel the movement)
+                    notes: "Just staying loose. Don't fatigue."
+          - time: "7:00-8:00"
+            type: class
+            session: "Class / Plyo / Core (light)"
+          - time: "8:00-9:00"
+            type: rest
+            session: "Skip - taper"
+
+      saturday:
+        slots:
+          - time: "5:00-7:00"
+            type: run
+            session: Long Run
+            distance: "16 km"
+            details: "Hyrox Sim: 8x1km at race effort (5:15/km) with 90s jog between"
+          - time: "7:00-8:00"
+            type: hyrox
+            session: "Optional: Light Sharpening"
+            duration: "15 min"
+            notes: "OPTIONAL - skip if fatigued from long run"
+            workout:
+              - block: "Light Movement"
+                exercises:
+                  - name: "Station Work"
+                    prescription: |
+                      Wall Balls: 15 reps
+                      Easy row: 500m
+                      Burpee Broad Jumps: 3 reps (feel the movement)
+                    notes: "Just staying loose. Don't fatigue. Taper week."
+          - time: "8:00-9:00"
+            type: strength
+            session: "Arms + Delts (Pump & Shape) - TAPER"
+            ref: strength.saturday
+
+      sunday:
+        rest: true
+
+  # ===========================================================================
+  # WEEK 10 - Race Week (Apr 6-13) | Run: ~14 km
+  # ===========================================================================
+  - week: 10
+    dates: "Apr 6-13"
+    phase: "Race Week"
+    runVolume: "~14 km"
+    philosophy: |
+      RACE WEEK. Minimal volume. Short sharpening sessions. Mental preparation.
+      Your fitness is built. Now preserve it. Trust the training.
+
+    days:
+      monday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Easy Run - Shakeout
+            distance: "4 km"
+            details: "Shakeout run, very easy"
+          - time: "6:00-7:00"
+            type: strength
+            session: "Squat Day (Lower + Core) - RACE WEEK"
+            ref: strength.monday
+          - time: "7:00-8:00"
+            type: class
+            session: "Class - optional, very light"
+          - time: "8:00-9:00"
+            type: rest
+            session: "Skip"
+
+      tuesday:
+        slots:
+          - time: "5:00-6:00"
+            type: strength
+            session: "Back + Biceps (Arm Priority) - Arms RACE WEEK"
+            ref: strength.tuesday
+          - time: "6:00-7:00"
+            type: rest
+            session: "Skip - race week"
+          - time: "7:00-8:00"
+            type: rest
+            session: "Skip - race week"
+
+      wednesday:
+        slots:
+          - time: "5:00-6:00"
+            type: hyrox
+            session: "Light Activation Only"
+            duration: "15 min"
+            workout:
+              - block: "Movement Activation"
+                notes: "OPTIONAL. Resting is also good."
+                exercises:
+                  - name: "Activation"
+                    prescription: |
+                      Easy run: 5 min @ conversational
+                      SkiErg: 250m easy
+                      Wall Balls: 10 reps
+                      5 burpee broad jumps (feel the movement)
+                    rest: "Full recovery"
+                    notes: "Your fitness is built. Trust it."
+          - time: "7:00-8:00"
+            type: rest
+            session: "Skip"
+          - time: "8:00-9:00"
+            type: rest
+            session: "Skip"
+
+      thursday:
+        slots:
+          - time: "5:00-6:00"
+            type: run
+            session: Strides
+            distance: "3 km"
+            details: "1km E + 4x200m R @ 4:30/km (full recovery) + 1km E"
+          - time: "6:00-7:00"
+            type: rest
+            session: "Skip - race week"
+          - time: "7:00-8:00"
+            type: rest
+            session: "Skip"
+
+      friday:
+        slots:
+          - time: "5:00-6:00"
+            type: rest
+            session: "Complete rest or light walk"
+          - time: "7:00-8:00"
+            type: rest
+            session: "Complete rest"
+
+      saturday:
+        slots:
+          - time: "5:00-6:00"
+            type: rest
+            session: "Pre-race: Light walk only if antsy"
+            notes: "Prepare gear, nutrition, mental rehearsal"
+
+      sunday:
+        slots:
+          - time: "ALL DAY"
+            type: race
+            session: "RACE DAY - HYROX"
+            distance: "8 km running + 8 stations"
+            details: "GO TIME."
+
+# =============================================================================
+# HYROX REFERENCE
+# =============================================================================
+
+hyroxReference:
+  stationTargets:
+    - station: SkiErg
+      distance: 1000m
+      target: "4:30-5:00"
+      strategy: "Start at 2:20/500m. Resist going faster early."
+    - station: Sled Push
+      distance: 50m
+      weight: "152 kg"
+      target: "3:00-3:30"
+      strategy: "Low position. Short choppy steps. NEVER STOP."
+    - station: Sled Pull
+      distance: 50m
+      weight: "103 kg"
+      target: "2:00-2:30"
+      strategy: "Steady hand-over-hand. Don't death-grip."
+    - station: Burpee Broad Jumps
+      distance: 80m
+      target: "4:00-4:30"
+      strategy: "8 x 10m mental chunks. Consistent 1.5m jumps."
+    - station: Rowing
+      distance: 1000m
+      target: "4:00-4:30"
+      strategy: "2:10-2:15 splits. 26-28 SPM. Don't rush recovery."
+    - station: Farmers Carry
+      distance: 200m
+      weight: "2 x 24 kg"
+      target: "2:30-3:00"
+      strategy: "Quick steps. 2 short breaks max."
+    - station: "Sandbag Lunges (Barbell sub)"
+      distance: 100m
+      weight: "35 kg barbell"
+      target: "4:00-4:30"
+      strategy: "SLOW IS FINE. Steady pace. Don't stop."
+    - station: Wall Balls
+      reps: 100
+      weight: "6 kg ball, 3m target"
+      target: "4:30-5:00"
+      strategy: "10x10 or 5x20. Break from start. FINISH STRONG."
+
+  technique:
+    skiErg:
+      - "Hinge at hips, not just arms"
+      - "Pull handles to thighs"
+      - "Use core and lats"
+      - "30-35 strokes per minute"
+    sledPush:
+      - "Low body position, 45-degree angle"
+      - "Drive through legs"
+      - "Short, choppy steps"
+      - "NEVER stop"
+    sledPull:
+      - "Sit back in athletic stance"
+      - "Alternate hands smoothly"
+      - "Don't death-grip"
+    burpeeBroadJumps:
+      - "Controlled burpee, don't slam chest"
+      - "Consistent 1.5m jumps, not max"
+      - "Break into 8 x 10m chunks"
+    rowing:
+      - "Drive with legs first (60% of power)"
+      - "26-28 SPM, 2:15/500m split"
+      - "Control the recovery"
+    farmersCarry:
+      - "Crush grip"
+      - "Shoulders back and down"
+      - "Short, quick steps"
+    lunges:
+      - "Controlled descent, knee tracks over toe"
+      - "Drive through front heel"
+      - "Keep torso upright"
+    wallBalls:
+      - "Deep squat, ball at chest"
+      - "Guide ball with fingertips"
+      - "Catch in squat position"
+      - "Keep elbows high"
+
+  raceDayStrategy:
+    target: "Sub 70:00"
+    breakdown:
+      running: "8 x 1km @ 5:00-5:15 = 40-42 min"
+      stations: "28-30 min total"
+      transitions: "2-3 min total (15-20s each)"
+    mentalCues:
+      firstHalf: "Control. Deposit in the bank. If you feel good, you're going too fast."
+      secondHalf: "Withdraw from the bank. Push harder. Trust the work."
+      perStation:
+        - "SkiErg: Rhythm, not power. Breathe."
+        - "Sled Push: Don't stop. Short steps. Keep momentum."
+        - "Sled Pull: Steady hands. Sit back. Breathe."
+        - "Burpees: Chunk it. 10m at a time. You've done this."
+        - "Row: Strong legs. You're halfway. Let's go."
+        - "Farmers: Grip recovers. Short breaks OK. Keep moving."
+        - "Lunges: Slow is fine. Just don't stop. Almost there."
+        - "Wall Balls: LAST STATION. Break it up. Empty the tank."
+
+  raceDayChecklist:
+    morning:
+      - "Wake up 3-4 hours before start"
+      - "Light breakfast: familiar foods, carbs, moderate protein"
+      - "Coffee if you normally have it"
+      - "Hydrate well, stop 2 hours before"
+    arrival:
+      - "Arrive 60-90 min before start"
+      - "Check in, familiarize with venue"
+      - "Locate transition zones and equipment"
+    warmup:
+      - "Easy jog: 5 min"
+      - "Dynamic stretches: leg swings, arm circles"
+      - "10 air squats, 5 burpees"
+      - "Mental cues review"
+    mantra: "Control the first half. Attack the second half. Trust the training."
