@@ -1,27 +1,13 @@
 import { plan } from "@/lib/plan";
 
-const phaseAccents: Record<string, string> = {
-  "Cycle 1 - Base/Build": "#00d4ff",
-  "Deload 1 + Full Sim": "#39ff14",
-  "Cycle 2 - Build/Peak": "#ff2d55",
-  "Deload 2": "#39ff14",
-  "Taper + Race": "#ff6b00",
-};
+const PHASE_ACCENTS = ["#00d4ff", "#ff2d55", "#ff6b00", "#39ff14"];
 
-const volumeData = [
-  { week: 1, km: 45 },
-  { week: 2, km: 48 },
-  { week: 3, km: 52 },
-  { week: 4, km: 30 },
-  { week: 5, km: 50 },
-  { week: 6, km: 54 },
-  { week: 7, km: 54 },
-  { week: 8, km: 35 },
-  { week: 9, km: 42 },
-  { week: 10, km: 14 },
-];
+const volumeData = plan.weeks.map((w) => ({
+  week: w.week,
+  km: parseInt(w.runVolume.match(/\d+/)?.[0] || "0"),
+}));
 
-const maxKm = 54;
+const maxKm = Math.max(...volumeData.map((d) => d.km));
 
 export default function PlanPage() {
   return (
@@ -57,8 +43,8 @@ export default function PlanPage() {
       <div className="animate-in animate-in-1">
         <p className="section-label mb-3">PERIODIZATION</p>
         <div className="flex gap-px overflow-hidden rounded">
-          {plan.periodization.map((phase) => {
-            const accent = phaseAccents[phase.name] || "#5a5a68";
+          {plan.periodization.map((phase, idx) => {
+            const accent = PHASE_ACCENTS[idx % PHASE_ACCENTS.length];
             const weekRange = phase.weeks.split("-");
             const span =
               weekRange.length === 2
@@ -102,8 +88,8 @@ export default function PlanPage() {
       {/* Phase details */}
       <div className="animate-in animate-in-3 space-y-2.5">
         <p className="section-label">PHASE INTEL</p>
-        {plan.periodization.map((phase) => {
-          const accent = phaseAccents[phase.name] || "#5a5a68";
+        {plan.periodization.map((phase, idx) => {
+          const accent = PHASE_ACCENTS[idx % PHASE_ACCENTS.length];
           return (
             <div
               key={phase.name}
@@ -269,9 +255,6 @@ function VolumeGraph({
   // Area: same path but close down to bottom
   const areaPath = `${linePath} L${points[points.length - 1].x},${PAD_T + PLOT_H} L${points[0].x},${PAD_T + PLOT_H} Z`;
 
-  // Deload weeks (4, 8) get a different dot style
-  const deloadWeeks = new Set([4, 8]);
-
   return (
     <div
       className="rounded border p-3"
@@ -355,15 +338,13 @@ function VolumeGraph({
         />
 
         {/* Data points */}
-        {points.map((p, i) => {
-          const isDeload = deloadWeeks.has(data[i].week);
-          return (
+        {points.map((p, i) => (
             <g key={i}>
               {/* Glow behind dot */}
               <circle
                 cx={p.x}
                 cy={p.y}
-                r={isDeload ? 4 : 5}
+                r={5}
                 fill="#00d4ff"
                 filter="url(#dotGlow)"
                 opacity={0.5}
@@ -372,17 +353,15 @@ function VolumeGraph({
               <circle
                 cx={p.x}
                 cy={p.y}
-                r={isDeload ? 2.5 : 3}
-                fill={isDeload ? "var(--color-surface)" : "#00d4ff"}
-                stroke={isDeload ? "var(--color-phosphor)" : "#00d4ff"}
-                strokeWidth={isDeload ? 1 : 0}
+                r={3}
+                fill="#00d4ff"
               />
               {/* Value label */}
               <text
                 x={p.x}
                 y={p.y - 9}
                 textAnchor="middle"
-                fill={isDeload ? "var(--color-phosphor)" : "var(--color-ice)"}
+                fill="var(--color-ice)"
                 fontSize="9"
                 fontWeight="600"
                 fontFamily="var(--font-mono)"
@@ -401,8 +380,7 @@ function VolumeGraph({
                 W{data[i].week}
               </text>
             </g>
-          );
-        })}
+        ))}
       </svg>
     </div>
   );

@@ -664,11 +664,11 @@ weeks:
   - week: 4
     dates: "Feb 23 - Mar 1"
     phase: Build
-    runVolume: "38 km"
+    runVolume: "30 km"
     philosophy: |
       Build phase begins. Mini sim A at race weight to establish benchmark.
       New class cycle starts: Bench Mon, Deadlift Wed, Back Squat Fri.
-      Long run at 15K.
+      Friday intervals on ski/row instead of running. Long run at 15K.
 
     days:
       monday:
@@ -764,10 +764,10 @@ weeks:
       friday:
         slots:
           - time: "5:00-6:00"
-            type: run
-            session: Interval Run
-            distance: "8 km"
-            details: "2km E + 4x800m I @ 4:50/km (2min jog) + 2km E"
+            type: hyrox
+            session: "Machine Intervals (Ski + Row)"
+            duration: "40 min"
+            details: "5min easy row warmup → 4x500m alternating SkiErg/Row @ I effort (~1:55/500m, 2min rest) → 5min easy cooldown"
           - time: "7:00-8:00"
             type: class
             session: "Class / Back Squat"
@@ -797,11 +797,11 @@ weeks:
   - week: 5
     dates: "Mar 2-8"
     phase: Build
-    runVolume: "40 km"
+    runVolume: "32 km"
     philosophy: |
-      Steady at 40K. Mini sim B hits pull/carry stations.
+      Steady build. Mini sim B hits pull/carry stations.
       Sled work at race weight, introduce overload on carries.
-      Long run at 16K.
+      Friday intervals on ski/row instead of running. Long run at 16K.
 
     days:
       monday:
@@ -900,10 +900,10 @@ weeks:
       friday:
         slots:
           - time: "5:00-6:00"
-            type: run
-            session: Interval Run
-            distance: "8 km"
-            details: "2km E + 4x800m I @ 4:50/km (2min jog) + 2km E"
+            type: hyrox
+            session: "Machine Intervals (Ski + Row)"
+            duration: "40 min"
+            details: "5min easy row warmup → 4x500m alternating SkiErg/Row @ I effort (~1:55/500m, 2min rest) → 5min easy cooldown"
           - time: "7:00-8:00"
             type: class
             session: "Class / Back Squat"
@@ -933,10 +933,11 @@ weeks:
   - week: 6
     dates: "Mar 9-15"
     phase: Build
-    runVolume: "42 km"
+    runVolume: "34 km"
     philosophy: |
       Top end of build volume. 6-station simulation with overload weight on sleds/carries.
-      Train heavier than race so competition feels manageable. Long run pushes to 18K.
+      Train heavier than race so competition feels manageable.
+      Friday intervals on ski/row instead of running. Long run pushes to 18K.
 
     days:
       monday:
@@ -1031,10 +1032,10 @@ weeks:
       friday:
         slots:
           - time: "5:00-6:00"
-            type: run
-            session: Interval Run
-            distance: "8 km"
-            details: "2km E + 5x800m I @ 4:50/km (90s jog) + 2km E"
+            type: hyrox
+            session: "Machine Intervals (Ski + Row)"
+            duration: "45 min"
+            details: "5min easy row warmup → 5x500m alternating SkiErg/Row @ I effort (~1:55/500m, 90s rest) → 5min easy cooldown"
           - time: "7:00-8:00"
             type: class
             session: "Class / Back Squat"

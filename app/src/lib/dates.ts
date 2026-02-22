@@ -1,3 +1,4 @@
+import { plan } from "./plan";
 import type { DayName, Plan } from "./types";
 
 const DAY_NAMES: DayName[] = [
@@ -10,8 +11,13 @@ const DAY_NAMES: DayName[] = [
   "saturday",
 ];
 
-const TRAINING_START = new Date("2026-02-02T00:00:00");
-const RACE_DATE = new Date("2026-04-13T00:00:00");
+function parseLocalDate(s: string): Date {
+  const d = new Date(s);
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+}
+
+const TRAINING_START = parseLocalDate(plan.meta.startDate);
+const RACE_DATE = parseLocalDate(plan.meta.raceDate);
 
 export function getCurrentDayName(): DayName {
   return DAY_NAMES[new Date().getDay()];
@@ -22,7 +28,7 @@ export function resolveCurrentWeek(): number {
   const diffMs = now.getTime() - TRAINING_START.getTime();
   const diffDays = Math.floor(diffMs / 86_400_000);
   const weekIndex = Math.floor(diffDays / 7);
-  return Math.max(0, Math.min(9, weekIndex));
+  return Math.max(0, Math.min(plan.meta.totalWeeks - 1, weekIndex));
 }
 
 export function getDaysUntilRace(): number {

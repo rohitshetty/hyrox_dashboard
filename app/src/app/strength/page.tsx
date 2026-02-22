@@ -4,15 +4,11 @@ import { useState } from "react";
 import { plan } from "@/lib/plan";
 import type { StrengthDay } from "@/lib/types";
 
-const DAYS = ["monday", "tuesday", "wednesday", "thursday", "saturday"] as const;
+const DAYS = Object.keys(plan.strength).filter(
+  (k) => k !== "recoveryGuardrails"
+);
 
-const DAY_SHORT: Record<string, string> = {
-  monday: "MON",
-  tuesday: "TUE",
-  wednesday: "WED",
-  thursday: "THU",
-  saturday: "SAT",
-};
+const dayShort = (d: string) => d.slice(0, 3).toUpperCase();
 
 export default function StrengthPage() {
   const [active, setActive] = useState<string>("monday");
@@ -44,7 +40,7 @@ export default function StrengthPage() {
               background: active === d ? "var(--color-ember)" : "var(--color-surface)",
             }}
           >
-            {DAY_SHORT[d]}
+            {dayShort(d)}
           </button>
         ))}
       </div>

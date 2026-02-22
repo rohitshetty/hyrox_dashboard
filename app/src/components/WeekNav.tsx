@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { plan } from "@/lib/plan";
 
 export default function WeekNav({
   weekNum,
@@ -38,7 +39,7 @@ export default function WeekNav({
         </p>
       </div>
 
-      {weekNum < 10 ? (
+      {weekNum < plan.meta.totalWeeks ? (
         <Link
           href={`/week/${weekNum + 1}`}
           className="rounded p-2 transition-colors active:bg-[var(--color-surface-2)]"
